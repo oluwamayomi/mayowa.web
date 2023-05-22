@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>More Forms</title>
+	</head>
+	<body>
+		<h2>Fill the form below for enquiries</h2>
+		<form>
+			<p>
+				<label for="firstname">First Name</label>
+				<input type="text" name="firstname"/>
+			</p>
+			<p>
+				<label for="lastname">Last Name</label>
+				<input type="text" name="lastname"/>
+			</p>
+			<p>
+				<label for="email">Email</label>
+				<input type="email" name="email"/>
+			</p>
+			<p>
+				<label for="subject">Subject</label>
+				<input type="text" name="subject"/>
+			</p>
+			<p>
+				<label for="message">Message</label>
+				<textarea>Enter your message here</textarea>
+			</p>
+			<p>
+				<input type="submit" name="submit
+				
+				onclick="alert('Your enquiries have been submitted')"/>
+				<input type="reset" value="Reset"/>
+				<input type="button" value="change color"/>
+			</p>
+		</form>
+		
+		<!--Tables to allign forms-->
+		<h2>Fill the form below to book our services</h2>
+		<form>
+			<table>
+			<!--Row 1-->
+				<tr>	
+					<td>
+						<label for="first_name">First Name:</label>
+					</td>
+					<td>
+						<input type="text" name="first_name"/>
+					</td>
+				</tr>
+			<!--Row 2-->
+				<tr>	
+					<td>
+						<label for="last_name">Last Name:</label>
+					</td>
+					<td>
+						<input type="text" name="last_name"/>
+					</td>
+				</tr>
+			<!--Row 3-->
+				<tr>	
+					<td>
+						<label for="email">Email:</label>
+					</td>
+					<td>
+						<input type="email" name="email"/>
+					</td>
+				</tr>
+			<!--Row 4-->
+				<tr>	
+					<td>
+						<label for="subject">Subject:</label>
+					</td>
+					<td>
+						<input type="text" name="subject"/>
+					</td>
+				</tr>
+			<!--Row 5-->
+				<tr>	
+					<td>
+						<label for="message"> Message:</label>
+					</td>
+					<td>
+						<textarea rows="10" cols="70"></textarea>
+					</td>
+				</tr>
+			<!--Row 6-->
+				<tr>	
+					<td>
+						
+					</td>
+					<td>
+						<input type="submit" name="submit" onclick="alert('your enquiries have been submitted')"/>
+						<input type="reset" value="Reset"/>
+						<input type="button" value="change color"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+		
+		
+		<h1>Fill the form below to Apply for a Job with us</h1>
+		<form>
+			<fieldset>
+			<legend>Personal Information</legend>
+				<label for="first_name">First Name</label><br/>
+				<input type="text" name="first_name" 
+				required placeholder="Enter your first name here"/><br/>
+				
+				<label for="last_name">Last Name</label><br/>
+				<input type="text" name="last_name" placeholder="Enter your last name here"/><br/>
+				
+				<label for="username">Username</label><br/>
+				<input type="text" name="username"/><br/>
+				
+				<label for="password">Password</label><br/>
+				<input type="password" name="password"/><br/>
+				
+				<label for="sex">Sex</label><br/>
+				<input type="radio" name="sex" value="male" checked="checked"/>Male
+				<input type="radio" name="sex" value="female" />Female<br/>
+				
+				<label for="birthdate"> Date of Birth</label><br/>
+				<input type="date" name="birthdate"/> <br/>
+				
+				<label for="phone_number">Phone Number</label>
+				<input type="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="example: 024-567-8890"/><br/>
+				
+				<label for="favcolor">What is your favourite color</label>
+				<input type="color" name="favcolor" value="#00FF00"/>
+			</fieldset>
+			<fieldset>
+			<legend>Job Information</legend>
+			<h4>Skills</h4>
+				<input type="checkbox" name="html"/>
+				<label for="html">HTML</label>
+				
+				<input type="checkbox" name="css"/>
+				<label for="css">CSS</label>
+				
+				<input type="checkbox" name="javascript"/>
+				<label for="javascript">JavaScript</label>
+				
+				<input type="checkbox" name="php"/>
+				<label for="php">PHP</label><br/><br/>
+				
+				<label for="expected_salary">Expected salary: $</label>
+				<input type="number" name="expected_salary" value="4000" min="2000" max="6000" step="1000" /><br/><br/>
+			
+				<label for="cv">Upload your CV</label>
+				<input type="file" name="cv"/><br/><br/>
+				
+				<input type="submit" name="submit" value="Submit" 
+				onclick="alert('Your application has been submitted')"/>
+				<input type="reset" name="reset" value="Reset"/>
+			</fieldset>
+		</form>
+	
+	</body>
+</html>
